@@ -1,368 +1,752 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio - Bilhaq</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/ico.jpg">
-    <meta name="theme-color" content="#C8C6A7" />
-    <meta name="msapplication-navbutton-color" content="#C8C6A7" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#C8C6A7" />
-    <meta name="keywords" content="Bilhaq Syahbani Sahatmojo">
-    <meta name="description" content="Hi, my name is Bilhaq from Indonesia, precisely in the province of East Java, Malang City. I really like new things like learning programming languages, one of which is a website programming language, I aspire to be a fullstack website developer. I started learning website programming languages starting in 2018 by self-taught, so many introductions from me thank you.">
-    <meta name="author" content="Bilhaq Syahbani Sahatmojo">
-    <title>Bilhaq Syahbani Sahatmojo</title>
-  </head>
-  <body>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-      <nav class="navbar navbar-expand-lg navbar-light shift fixed-top custom-nav" style="background-color: #C8C6A7;">
-          <div class="container">
-            <div class="font-enam">
-              <a class="navbar-brand" href="#"><b>$</b> cd <span id="terminal" style="color: #059c00;"></span></a>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand font-mono" href="#"><span class="nav-text">$cd</span> <span id="nav-typed"
+                    style="color: #36e600"></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+                <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item nav-hover">
-                  <a class="nav-link nav-hover font-dua" href="#">Home</a>
-                </li>
-                <li class="nav-item nav-hover">
-                  <a class="nav-link nav-hover font-dua" href="#about">About me</a>
-                </li>
-                <li class="nav-item nav-hover">
-                  <a class="nav-link nav-hover font-dua" href="#works">My Works</a>
-                </li>
-                <li class="nav-item nav-blog">
-                  <a class="nav-link font-dua" href="https://billy0tech.blogspot.com/">Blog</a>
-                </li>
-              </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto font-mono">
+                    <li class="nav-item">
+                        <a class="nav-link link-navbar link-white" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-navbar link-white" href="#portofolio">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-navbar link-white" href="#certificate">Certificate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-navbar link-white" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-navbar link-white" href="#">Home</a>
+                    </li>
+                </ul>
             </div>
         </div>
-      </nav>
-
-      <div style=" background-color: #C8C6A7; height: 100vh;">
-          <div class="container">
-                <div class="" style="text-align: center;">
-                    <div class="header-custom">
-                        <h1><span class="font-dua">Hello</span>, <span class="font-satu" id="header-typed"></span></h1>
-                        <div class="mt-5">
-                            <a href="#about" class="custom-readmore text-center">
-                                Read More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/></svg>
-                            </a>
+    </nav>
+    <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                $cd <span id="sidebar-typed" style="color: #36e600"></span>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link link-sidebar" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-sidebar" href="#portofolio">Portofolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-sidebar" href="#certificate">Certificate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-sidebar" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-sidebar" href="#">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="section-home">
+        <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh">
+            <div class="text-center">
+                <div class="row align-items-center" data-aos="fade-down" data-aos-offset="300" data-aos-duration="1000">
+                    <div class="col-md-4 col-sm-12">
+                        <img src="assets/img/profile-pic.png" alt="" class="img-fluid" width="550px" />
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <h1 class="font-rubik gradient-text">Hello, I'm Bilhaq!</h1>
+                        <span class="font-mono" id="header-typed"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about-me">
+        <div class="section-about-me text-white gradient-background" style="padding: 70px 0 70px 0">
+            <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh">
+                <div class="font-mono">
+                    <div data-aos-offset="300" data-aos-duration="1000" data-aos="fade-right">
+                        <h2 class="font-rubik">About Me</h2>
+                        <hr class="hr-custom-left">
+                        "My name is Bilhaq, a Computer Engineering student at PGRI Kanjuruhan
+                        University Malang. Residing in Malang, I have a strong interest in
+                        technology, particularly in programming, hacking, and computer
+                        networking. In this portfolio, you'll find my projects covering
+                        various aspects of the tech field, along with some achievements and
+                        other activities I've been involved in. With hard work and a passion
+                        for learning, I aim to continue growing and inspiring others through
+                        my work."
+                    </div>
+                    <div data-aos-offset="300" data-aos-duration="1000" data-aos="fade-left">
+                        <h2 class="mt-5 font-rubik text-end">Education</h2>
+                        <hr class="hr-custom-right">
+                        <div class="education font-mono text-end">
+                            <h4>University PGRI Kanjuruhan Malang</h4>
+                            <p class="text-mute small">
+                                <b>2023-2027</b>
+                                <br>
+                                "University PGRI Kanjuruhan Malang is situated at Jl. S. Supriadi No.48, Bandungrejosari,
+                                Kec. Sukun, Malang City, East Java 65148. As a student of Informatics Engineering at the
+                                Faculty of Science and Technology, I commenced my studies there in 2023."
+                            </p>
+                            <h4>SMKN 2 Malang</h4>
+                            <p class="text-mute small">
+                                <b>2019-2022</b>
+                                <br>
+                                "At SMKN 2 Malang, I was a graduate of the Computer and Network Engineering program, where I
+                                learned about computer network management, hardware and software configuration, as well as
+                                network security."
+                            </p>
+                            <h4>SMPN 19 Malang</h4>
+                            <p class="text-mute small">
+                                <b>2016-2019</b>
+                                <br>
+                                "I am a former student of SMPN 19 Malang, a school located in the heart of the city. I
+                                entered in 2016 and graduated in 2019."
+                            </p>
+                        </div>
+                    </div>
+                    <div data-aos-offset="300" data-aos-duration="1000" data-aos="fade-right">
+                        <h2 class="mt-5 font-rubik text-start">experience</h2>
+                        <hr class="hr-custom-left">
+                        <div class="experience font-mono">
+                            <h4>KSP Taman Usaha Sejahtera</h4>
+                            <p class="text-mute small">
+                                <b>2022-2023</b>
+                                <br>
+                                "I have experience in the field of finance (cooperatives) as a field officer, where my
+                                duties include finding new and existing members, collecting payments from customers, and
+                                assisting with office administration."
+                            </p>
+                            <h4 class="">Part Time Driver Maxim</h4>
+                            <p class="text-mute small">
+                                <b>2020-Now</b>
+                                <br>
+                                "I work as a part-time driver for Maxim, where my tasks involve delivering people, goods,
+                                and food through the Maxim platform."
+                            </p>
+                            <h4 class="">Internship</h4>
+                            <p class="text-mute small">
+                                <b>January 2021 - January 2021</b>
+                                <br>
+                                "I have previously interned at a renowned university in Malang city, Universitas Merdeka
+                                Malang, where I was engaged in the Information Systems program at the Faculty of Information
+                                Technology."
+                            </p>
+                        </div>
+                    </div>
+                    <div data-aos-offset="300" data-aos-duration="1000" data-aos="fade-up">
+                        <h2 class="mt-5 font-rubik text-center">Skills</h2>
+                        <hr class="hr-custom-center">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <b>PHP</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width: 80%; background: #12486B;">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <b>HTML</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width: 85%; background: #12486B;">85%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <b>CSS</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width: 70%; background: #12486B;">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <b>JavaScript</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width:65%; background: #12486B;">65%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <b>MYSQL</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width: 75%; background: #12486B;">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <b>Python</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width: 80%; background: #12486B;">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <b>Node.JS</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width: 55%; background: #12486B;">55%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <b>Networking</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width: 75%; background: #12486B;">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <b>Hacking</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width: 70%; background: #12486B;">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <b>Laravel</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width: 80%; background: #12486B;">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <b>Codeigniter</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width: 80%; background: #12486B;">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-2">
+                                <b>Express.js</b>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="progress" role="progressbar" aria-label="Info striped example"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-striped gradient-background"
+                                        style="width: 30%; background: #12486B;">30%</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-          </div>
-      </div>
-
-      <section id="about" style="padding-top: 70px;">
-          <div class="container">
-              <div class="">
-                 <h2 class="font-empat">About Me</h2>
-                 <hr class="haer">
-                 <div class="row" data-aos="fade-up" data-aos-duration="2000">
-                     <div class="col-md-4 mt-3">
-                         <img src="img/img-about.jpeg" alt="" class="img-about-custom">
-                     </div>
-                     <div class="col-md-8 mt-2 font-dua">
-                         <p class="custom-text-header" style="color: #919191">
-                             Hi, my name is Bilhaq from Indonesia, precisely in the province of East Java, Malang City. I really like new things like learning programming languages, one of which is a website programming language, I aspire to be a fullstack website developer. I started learning website programming languages starting in 2018 by self-taught, so many introductions from me thank you.
-                         </p>
-                         <label for="php" style="color: #435560"><b>PHP:</b></label>
-                         <div class="progress">
-                           <div class="progress-bar bg-secondary" role="progressbar" style="width: 75%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                         </div>
-                         <label for="php" class="mt-1" style="color: #435560"><b>HTML:</b></label>
-                         <div class="progress">
-                           <div class="progress-bar bg-secondary" role="progressbar" style="width: 85%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                         </div>
-                         <label for="php" class="mt-1" style="color: #435560"><b>CSS:</b></label>
-                         <div class="progress">
-                           <div class="progress-bar bg-secondary" role="progressbar" style="width: 70%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                         </div>
-                         <label for="php" class="mt-1" style="color: #435560"><b>JAVASCRIPT:</b></label>
-                         <div class="progress">
-                           <div class="progress-bar bg-secondary" role="progressbar" style="width: 40%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                         </div>
-                     </div>
-                 </div>
-              </div>
-          </div>
-      </section>
-
-      <section id="works" style="padding-top: 70px; background-color: #C8C6A7; margin-top: 100px; padding-bottom: 100px;">
-          <div class="container">
-              <h2 class="font-empat">My Works</h2>
-              <hr class="haer" style="margin-bottom: 40px;">
-              <!-- Set up your HTML -->
-              <div class="owl-carousel owl-theme card-deck">
-                    <div class="item">
+            </div>
+        </div>
+    </div>
+    <div id="portofolio" data-aos-offset="300" data-aos-duration="1000" data-aos="fade-up">
+        <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+            <div class="container font-mono" style="position: absolute;">
+                <h2 class="font-rubik text-center">Portofolio</h2>
+                <hr class="hr-custom-center">
+                <div class="owl-carousel owl-theme card-deck">
+                    <div class="item pb-3">
                         <div class="card border-0 shadow">
                             <div class="container-img">
-                                <img width="100px" data-src="img/portofolio/absensisiswa.png" class="shadow-sm owl-lazy">
-                               <div class="middle">
-                                 <a href="https://github.com/ICWR-TECH/absensi-siswa" class="text">
-                                     Visit
-                                 </a>
-                               </div>
-                             </div>
-                            <div class="card-body">
-                                <div class="card-title text-center text-secondary">
-                                    <h4 style="font-size: 15px;" class="font-dua">ABSENSI SISWA</h4>
-                                    <hr class="haer" style="margin-left: auto; margin-right: auto;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card border-0 shadow">
-                             <div class="container-img">
-                                 <img width="100px" data-src="img/portofolio/basic_cms.png" class="shadow-sm owl-lazy">
+                                <img width="100px"
+                                    data-src="assets/img/absensi-online.png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
                                 <div class="middle">
-                                  <a href="https://github.com/ICWR-TECH/basic-cms" class="text">
-                                      Visit
-                                  </a>
+                                    <a href="https://github.com/ICWR-TEAM/absensi-online" class="text">
+                                        Visit
+                                    </a>
                                 </div>
-                              </div>
+                            </div>
                             <div class="card-body">
                                 <div class="card-title text-center text-secondary">
-                                    <h4 style="font-size: 15px;" class="font-dua">BASIC CMS</h4>
-                                    <hr class="haer" style="margin-left: auto; margin-right: auto;">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">Absensi online</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item pb-3">
                         <div class="card border-0 shadow">
                             <div class="container-img">
-                                <img width="100px" data-src="img/portofolio/cek_ongkir.png" class="shadow-sm owl-lazy">
-                               <div class="middle">
-                                 <a href="https://github.com/ICWR-TECH/CekOngkir" class="text">
-                                     Visit
-                                 </a>
-                               </div>
-                             </div>
+                                <img width="100px"
+                                    data-src="https://raw.githubusercontent.com/ICWR-TEAM/InformasiPerpustakaan/main/Rectangle%203.png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TEAM/InformasiPerpustakaan" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <div class="card-title text-center text-secondary">
-                                    <h4 style="font-size: 15px;" class="font-dua">CEK ONGKIR</h4>
-                                    <hr class="haer" style="margin-left: auto; margin-right: auto;">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">Sistem perpustakaan</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item pb-3">
                         <div class="card border-0 shadow">
                             <div class="container-img">
-                                <img width="100px" data-src="img/portofolio/exiftool.png" class="shadow-sm owl-lazy">
-                               <div class="middle">
-                                 <a href="https://github.com/ICWR-TECH/ExifTools" class="text">
-                                     Visit
-                                 </a>
-                               </div>
-                             </div>
+                                <img width="100px"
+                                    data-src="https://raw.githubusercontent.com/ICWR-TEAM/pollingosis/main/2.png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TEAM/pollingosis" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
                             <div class="card-body">
                                 <div class="card-title text-center text-secondary">
-                                    <h4 style="font-size: 15px;" class="font-dua">EXIFTOOL</h4>
-                                    <hr class="haer" style="margin-left: auto; margin-right: auto;">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">Polling osis</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="card border-0 shadow">
-                            <div class="container-img">
-                                <img width="100px" data-src="img/portofolio/penghasilanusaha.png" class="shadow-sm owl-lazy">
-                               <div class="middle">
-                                 <a href="https://github.com/ICWR-TECH/catatan_PenghasilanUsaha" class="text">
-                                     Visit
-                                 </a>
-                               </div>
-                             </div>
-                            <div class="card-body">
-                                <div class="card-title text-center text-secondary">
-                                    <h4 style="font-size: 15px;" class="font-dua">CATATAN PENGHASILAN USAHA</h4>
-                                    <hr class="haer" style="margin-left: auto; margin-right: auto;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card border-0 shadow">
-                            <div class="container-img">
-                                <img width="100px" data-src="img/portofolio/quranonline.png" class="shadow-sm owl-lazy">
-                               <div class="middle">
-                                 <a href="https://github.com/ICWR-TECH/al-quran-online" class="text">
-                                     Visit
-                                 </a>
-                               </div>
-                             </div>
-                            <div class="card-body">
-                                <div class="card-title text-center text-secondary">
-                                    <h4 style="font-size: 15px;" class="font-dua">QUR'AN ONLINE</h4>
-                                    <hr class="haer" style="margin-left: auto; margin-right: auto;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card border-0 shadow">
-                            <div class="container-img">
-                                <img width="100px" data-src="img/portofolio/simpleblog.png" class="shadow-sm owl-lazy">
-                               <div class="middle">
-                                 <a href="https://github.com/ICWR-TECH/simple_blog" class="text">
-                                     Visit
-                                 </a>
-                               </div>
-                             </div>
-                            <div class="card-body">
-                                <div class="card-title text-center text-secondary">
-                                    <h4 style="font-size: 15px;" class="font-dua">SIMPLE BLOG</h4>
-                                    <hr class="haer" style="margin-left: auto; margin-right: auto;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card border-0 shadow">
-                            <div class="container-img">
-                                <img width="100px" data-src="img/portofolio/Rectangle 3.png" class="shadow-sm owl-lazy">
-                               <div class="middle">
-                                 <a href="https://github.com/ICWR-TEAM/InformasiPerpustakaan" class="text">
-                                     Visit
-                                 </a>
-                               </div>
-                             </div>
-                            <div class="card-body">
-                                <div class="card-title text-center text-secondary">
-                                    <h4 style="font-size: 15px;" class="font-dua">Sistem Informasi Perpustakaan</h4>
-                                    <hr class="haer" style="margin-left: auto; margin-right: auto;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card border-0 shadow">
-                            <div class="container-img">
-                                <img width="100px" data-src="img/portofolio/vottingosis.png" class="shadow-sm owl-lazy">
-                               <div class="middle">
-                                 <a href="https://github.com/ICWR-TEAM/pollingosis" class="text">
-                                     Visit
-                                 </a>
-                               </div>
-                             </div>
-                            <div class="card-body">
-                                <div class="card-title text-center text-secondary">
-                                    <h4 style="font-size: 15px;" class="font-dua">E-VOTTING</h4>
-                                    <hr class="haer" style="margin-left: auto; margin-right: auto;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-              </div>
-          </div>
-      </section>
 
-      <section id="skill">
-          <div class="container" style="padding-top: 100px; padding-bottom: 100px;">
-              <h2 class="font-empat">My Skills</h2>
-              <hr class="haer mb-3">
-              <div class="" style="margin-left:auto; margin-right: auto; display:block;">
-                  <img src="img/skill/html5.png" alt="" class="rounded" style="object-fit: cover; width: 130px; height: 130px; margin-left: 20px; margin-top: 10px;">
-                  <img src="img/skill/css.png" alt="" class="rounded" style="object-fit: cover; width: 130px; height: 130px; margin-left: 20px; margin-top: 10px;">
-                  <img src="img/skill/javascript.png" alt="" class="rounded" style="object-fit: cover; width: 130px; height: 130px; margin-left: 20px; margin-top: 10px;">
-                  <img src="img/skill/jquery.png" alt="" class="rounded" style="object-fit: cover; width: 130px; height: 130px; margin-left: 20px; margin-top: 10px;">
-                  <img src="img/skill/bootstrap.png" alt="" class="rounded" style="object-fit: cover; width: 130px; height: 130px; margin-left: 20px; margin-top: 10px;">
-                  <img src="img/skill/php.png" alt="" class="rounded" style="object-fit: cover; width: 130px; height: 130px; margin-left: 20px; margin-top: 10px;">
-                  <img src="img/skill/codeigniter.png" alt="" class="rounded" style="object-fit: cover; width: 130px; height: 130px; margin-left: 20px; margin-top: 10px;">
-              </div>
-          </div>
-      </section>
+                    <div class="item pb-3">
+                        <div class="card border-0 shadow">
+                            <div class="container-img">
+                                <img width="100px"
+                                    data-src="https://raw.githubusercontent.com/ICWR-TEAM/ForumICWR/main/Screenshot%20from%202021-10-18%2014-59-47.png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TEAM/ForumICWR" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center text-secondary">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">FE Forum ICWR-Team</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item pb-3">
+                        <div class="card border-0 shadow">
+                            <div class="container-img">
+                                <img width="100px"
+                                    data-src="https://raw.githubusercontent.com/ICWR-TECH/catatan_PenghasilanUsaha/master/1.png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TECH/catatan_PenghasilanUsaha" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center text-secondary">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">Catatan penghasilan usaha</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item pb-3">
+                        <div class="card border-0 shadow">
+                            <div class="container-img">
+                                <img width="100px"
+                                    data-src="https://raw.githubusercontent.com/ICWR-TECH/simple_blog/master/1.png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TECH/simple_blog" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center text-secondary">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">Simple blog</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      <section id="penutupan" style="background-color: #6E7C7C; color: white;">
-          <div class="container" style="padding-top: 100px; padding-bottom: 100px;">
-              <h2 class="font-satu text-center" style="">
-                  let's discuss and start working together
-              </h2>
-              <div class="d-flex justify-content-center">
-                  <a href="https://www.facebook.com/profile.php?id=100009509036838" class="rounded-circle btn btn-outline-primary sosmed-custom">
-                      <span class="fa fa-facebook-square"></span>
-                  </a>
-                  <a href="mailto:silendprojeck@gmail.com" class="rounded-circle btn btn-outline-primary sosmed-custom">
-                      <span class="fa fa-envelope"></span>
-                  </a>
-                  <a href="https://github.com/jon3sjns" class="rounded-circle btn btn-outline-primary sosmed-custom">
-                      <span class="fa fa-github"></span>
-                  </a>
-                  <a href="https://www.linkedin.com/in/bilhaq-syahbani-sahatmojo-3911b21a0/" class="rounded-circle btn btn-outline-primary sosmed-custom">
-                      <span class="fa fa-linkedin"></span>
-                  </a>
-              </div>
-          </div>
-      </section>
+                    <div class="item pb-3">
+                        <div class="card border-0 shadow">
+                            <div class="container-img">
+                                <img width="100px"
+                                    data-src="https://github.com/ICWR-TECH/jam_imsak/raw/master/Screenshot%20from%202020-04-25%2015-08-18.png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TECH/jam_imsak" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center text-secondary">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">Jam muslim</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="item pb-3">
+                        <div class="card border-0 shadow">
+                            <div class="container-img">
+                                <img width="100px"
+                                    data-src="https://github.com/ICWR-TECH/basic-cms/raw/master/Screenshot%20from%202020-03-30%2008-58-09.png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TECH/basic-cms" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center text-secondary">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">Basic CMS</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item pb-3">
+                        <div class="card border-0 shadow">
+                            <div class="container-img">
+                                <img width="100px"
+                                    data-src="https://github.com/ICWR-TEAM/URLExtractor/raw/main/carbon%20(1).png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TEAM/URLExtractor" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center text-secondary">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">URL Extractor</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item pb-3">
+                        <div class="card border-0 shadow">
+                            <div class="container-img">
+                                <img width="100px"
+                                    data-src="assets/img/big-dorker.png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TEAM/BigDorker" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center text-secondary">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">Big Dorker</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item pb-3">
+                        <div class="card border-0 shadow">
+                            <div class="container-img">
+                                <img width="100px"
+                                    data-src="assets/img/pastebin-uploader.png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TEAM/PastebinUploader" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center text-secondary">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">Pastebin uploader</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-      <footer class="footer-custom font-dua">
-          &copy; Copyright 2021 | Created by Bilhaq Syahbani Sahatmojo
-      </footer>
+                    <div class="item pb-3">
+                        <div class="card border-0 shadow">
+                            <div class="container-img">
+                                <img width="100px"
+                                    data-src="assets/img/nodir-scanner.png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TEAM/nodirScanner" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center text-secondary">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">Node directory scanner</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                    <div class="item pb-3">
+                        <div class="card border-0 shadow">
+                            <div class="container-img">
+                                <img width="100px"
+                                    data-src="https://github.com/ICWR-TEAM/SimSu/raw/main/carbon%20(9).png"
+                                    class="shadow-sm owl-lazy" style="max-height: 200px;">
+                                <div class="middle">
+                                    <a href="https://github.com/ICWR-TEAM/SimSu" class="text">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title text-center text-secondary">
+                                    <hr class="hr-custom-center" style="margin-left: auto; margin-right: auto;">
+                                    <h4 style="font-size: 15px;" class="font-dua">Game simple suit</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="certificate certificate-custom" id="certificate" data-aos-offset="300" data-aos-duration="1000" data-aos="fade-up">
+        <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh">
+            <div class="font-mono">
+                <h2 class="font-rubik text-center">Certificate</h2>
+                <hr class="hr-custom-center">
+                <div class="justify-content-center pencapaian">
+                    <div class="row">
+                        <div class="col-md-4 mt-3">
+                            <div class="card border-0">
+                                <div class="card-zoom">
+                                    <img data-src="assets/img/certificate1.jpeg" alt="Loading..."
+                                        class="lazy card-img-top zoom-in" width="width:300px;" />
+                                </div>
+                                <div class="card-body shadow text-center">
+                                    <p class="card-text">
+                                        "Second place winner of the UMM Code Championship"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <div class="card border-0">
+                                <div class="card-zoom">
+                                    <img data-src="assets/img/certificate2.jpeg" alt="Loading..."
+                                        class="lazy card-img-top zoom-in" width="500px;" />
+                                </div>
+                                <div class="card-body shadow text-center">
+                                    <p class="card-text">
+                                        "Contestant of the LKS Wilker 3 in 2022"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <div class="card border-0">
+                                <div class="card-zoom">
+                                    <img data-src="assets/img/certificate7.jpeg" alt="Loading..."
+                                        class="lazy card-img-top zoom-in" width="500px;" />
+                                </div>
+                                <div class="card-body shadow text-center">
+                                    <p class="card-text">
+                                        "Participant of the Pasuruandev Webinar"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-4 mt-3">
+                            <div class="card border-0">
+                                <div class="card-zoom">
+                                    <img data-src="assets/img/certificate5.jpeg" alt="Loading..."
+                                        class="lazy card-img-top zoom-in" width="500px;" />
+                                </div>
+                                <div class="card-body shadow text-center">
+                                    <p class="card-text">
+                                        "Participant of the Technowars Seminar"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <div class="card border-0">
+                                <div class="card-zoom">
+                                    <img data-src="assets/img/certificate6.jpeg" alt="Loading..."
+                                        class="lazy card-img-top zoom-in" width="500px;" />
+                                </div>
+                                <div class="card-body shadow text-center">
+                                    <p class="card-text">
+                                        "Participant of the National Seminar Filkom UB"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <div class="card border-0">
+                                <div class="card-zoom">
+                                    <img data-src="assets/img/certificate4.jpeg" alt="Loading..."
+                                        class="lazy card-img-top zoom-in" width="500px;" />
+                                </div>
+                                <div class="card-body shadow text-center">
+                                    <p class="card-text">
+                                        "Participant of the 4C Competition Filkom UB"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" style="background-color: #6E7C7C; color: white;">
+        <div class="container" style="padding-top: 100px; padding-bottom: 100px;">
+            <div id="form-contact" class="font-anta pb-5">
+                <h2 class="text-start">Contact</h2>
+                <hr class="hr-custom-left">
+                <input id="nameInput" placeholder="Your name..." type="text">
+                <textarea id="needsTextarea" placeholder="Your needs..." rows="3"></textarea>            
+                <button id="submit" class="button-contact mt-3" onclick="submitContact()">Submit</button>
+                <div id="alert-form"></div>
+            </div>
+            <h2 class="font-anta text-center" style="margin-top: 100px;">
+                <b>
+                    LET'S DISCUSS AND START WORKING TOGETHER
+                </b>
+            </h2>
+            <div class="d-flex justify-content-center">
+                <a href="https://wa.me/6285837173009"
+                    class="rounded-circle btn btn-outline-primary sosmed-custom" target="_blank">
+                    <span class="fa fa-whatsapp"></span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100009509036838"
+                    class="rounded-circle btn btn-outline-primary sosmed-custom" target="_blank">
+                    <span class="fa fa-facebook"></span>
+                </a>
+                <a href="https://www.instagram.com/billy000_00/"
+                    class="rounded-circle btn btn-outline-primary sosmed-custom" target="_blank">
+                    <span class="fa fa-instagram"></span>
+                </a>
+                <a href="mailto:silendprojeck@gmail.com" class="rounded-circle btn btn-outline-primary sosmed-custom"
+                    target="_blank">
+                    <span class="fa fa-envelope"></span>
+                </a>
+                <a href="https://github.com/jon3sjns" class="rounded-circle btn btn-outline-primary sosmed-custom"
+                    target="_blank">
+                    <span class="fa fa-github"></span>
+                </a>
+                <a href="https://www.linkedin.com/in/bilhaq-syahbani-sahatmojo-3911b21a0/"
+                    class="rounded-circle btn btn-outline-primary sosmed-custom" target="_blank">
+                    <span class="fa fa-linkedin"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-custom font-dua">
+        &copy; <span id="tahun"></span> | Created by Bilhaq Syahbani Sahatmojo
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c6ad7dab77.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    new Typed('#terminal',{
-        strings : ["/Bilhaq"],
-        typeSpeed : 100,
-        delaySpeed : 100,
-        loop : false
-    });
-    new Typed("#header-typed",{
-        strings: ["I'm bilhaq syahbani sahatmojo"],
-        typeSpeed: 100,
-        delaySpeed: 100,
-        loop: false
-    });
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-    $(window).scroll(function(){
-        $("nav").toggleClass("scrolled",$(this).scrollTop()>50);
-    });
+    <script src="assets/script.js"></script>
+</body>
 
-    AOS.init({
-        once: true
-    });
-    $(document).ready(function() {
-      var owl = $('.owl-carousel');
-      owl.owlCarousel({
-        margin: 5,
-        nav: true,
-        loop: true,
-        lazyLoad:true,
-        autoplay:true,
-        autoplayTimeout:5000,
-        autoplayHoverPause:false,
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 3
-          }
-        }
-      })
-    })
-    </script>
-
-  </body>
 </html>

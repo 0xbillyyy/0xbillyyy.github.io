@@ -1,0 +1,281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global.css atau styles.css */
+:root {
+    --custom-headline: #f5f5f5;
+    --custom-paragraph: #eeeeee;
+    --custom-one: #26292b;
+    --custom-two: #2e3239;
+    --custom-three: #5f7adb;
+    --custom-four: #a2b2ee;
+}
+
+/* styles.css */
+.bg-blur-purple {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px; /* Sesuaikan ukuran sesuai kebutuhan */
+    height: 150px; /* Sesuaikan ukuran sesuai kebutuhan */
+    background: rgba(128, 0, 128, 0.5); /* Warna ungu dengan opacity */
+    border-radius: 50%; /* Membuat bentuk bulat */
+    backdrop-filter: blur(15px); /* Efek blur */
+    z-index: -1; /* Pastikan berada di belakang konten lain */
+  }
+  .custom-radius {
+    border-radius: 20% 10% 90% 10%;
+
+  }
+
+
+.text-custom-headline {
+    color: var(--custom-headline);
+}
+
+.text-custom-paragraph {
+    color: var(--custom-paragraph);
+}
+
+.text-custom-subtitle {
+    color: #5f7adb;
+}
+
+.custom-card-hover:hover{
+    box-shadow: 7px 8px 0px -2px rgba(255,255,255,0.75);
+    -webkit-box-shadow: 7px 8px 0px -2px rgba(255,255,255,0.75);
+    -moz-box-shadow: 7px 8px 0px -2px rgba(255,255,255,0.75);
+    transition: ease-out 50ms;
+}
+
+.highlight-paragraph{
+    background-color: #2e3239;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.highlight-paragraph:hover{
+    background-color: #a2b2ee;
+    color: #27292b;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: monospace;
+    transition: ease-in-out 0.2s;
+    cursor:nw-resize;
+
+}
+
+
+/* Style icon skills */
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 70px;
+  }
+  
+
+  .custom-logo-skills {
+    position: relative;
+    padding: 10px;
+    font-size: 70px;
+    border: 2px solid transparent; /* Border default transparan */
+    transition: border 0.5s ease;
+}
+
+.custom-logo-skills:hover {
+    border: 2px solid; /* Border muncul saat hover */
+    border-image: linear-gradient(90deg, var(--custom-four), var(--custom-three), var(--custom-four)) 1;
+    animation: borderAnimation 5s ease infinite;
+    border-image-slice: 1; /* Mengatur border image */
+    cursor: nw-resize;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(90deg, var(--custom-four), var(--custom-three), var(--custom-four));
+    }
+    50% {
+        border-image-source: linear-gradient(90deg, var(--custom-three), var(--custom-four), var(--custom-three));
+    }
+    100% {
+        border-image-source: linear-gradient(90deg, var(--custom-four), var(--custom-three), var(--custom-four));
+    }
+}
+
+/* end style */
+
+
+/* Portofolio */
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+.hover-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--custom-two);
+    transform: translateY(100%);
+    z-index: 5;
+    transition: transform 1s ease-in-out;
+}
+
+.hover-slide:hover::before {
+    transform: translateY(0);
+}
+
+.text-overlay-portofolio {
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    z-index: 10; /* Ensure text is above the overlay */
+    text-align: center; /* Center text horizontally */
+}
+
+.hover-slide:hover .text-overlay-portofolio {
+    opacity: 1; /* Show text on hover */
+}
+
+.button-portofolio{
+    /* background-color: var(--custom-three); */
+    border: 2px solid #5f7adb;
+    border-radius: 20px;
+    color: var(--custom-three);
+}
+
+.button-portofolio:hover{
+    background-color: var(--custom-three);
+    color: var(--custom-headline);
+    transition: ease 0.2s;
+}
+
+.title-portofolio{
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* end portofolio */
+
+
+/* Contact */
+
+.text-contact{
+    color: var(--custom-paragraph);
+}
+
+.border-contact{
+    border-color: black;
+}
+
+
+.button-contact {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    background-color: transparent;
+    transition: background-color .3s ease, border .3s ease;
+    width: 100%;
+    border: 1px solid var(--custom-headline);
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--custom-headline);
+}
+
+
+
+.button-contact:hover {
+    background-color: var(--custom-three); 
+    border: 1px solid var(--custom-three); 
+}
+
+.custom-logo-socials{
+    font-size: 50px;
+    margin: 0 10px 0 10px;
+    padding: 10px;
+    border-radius: 50px;
+}
+.whatsapp{
+    color: #25D366;
+}
+.facebook{
+    color: #1877F2;
+}
+.instagram{
+    color: #E1306C;
+}
+.mail{
+    color: #D93025;
+}
+.github{
+    color: #181717;
+}
+.linkedin{
+    color: #0A66C2;
+}
+
+.whatsapp:hover{
+    background-color: #25D366;
+    color: white;
+    transition: ease .3s;
+}
+.facebook:hover{
+    background-color: #1877F2;
+    color: white;
+    transition: ease .3s;
+}
+.instagram:hover{
+    background-color: #E1306C;
+    color: white;
+    transition: ease .3s;
+}
+.mail:hover{
+    background-color: #D93025;
+    color: white;
+    transition: ease .3s;
+}
+.github:hover{
+    background-color: #181717;
+    color: white;
+    transition: ease .3s;
+}
+.linkedin:hover{
+    background-color: #0A66C2;
+    color: white;
+    transition: ease .3s;
+}
+
+      /* end contact */

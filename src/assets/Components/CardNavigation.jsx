@@ -54,7 +54,7 @@ export function CardNavigation() {
               <PiCertificateFill size={24} />
             </div>
           </Link>
-          <Link to="/contact">
+          <Link to="/">
             <div className="hover:bg-black p-2 rounded-md transition duration-100 ease-out md:ease-in mr-3 hover:bg-custom-button text-white hover:text-custom-button-text" title="Contact Me">
               <MdContacts size={24} className="" />
             </div>

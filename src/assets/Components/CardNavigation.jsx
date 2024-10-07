@@ -17,7 +17,7 @@ export function CardNavigation() {
 
       <div className="mb-5 fixed top-0 left-0 m-5 backdrop-blur-sm text-white p-2 text-center shadow-lg border-2 rounded-md custom-card-hover text-white hover:text-custom-button-text hover:bg-custom-button z-10">
         <div className="flex justify-center items-center">
-          <a target="_blank" href={"/"} className="flex justify-center items-center">
+          <a target="_blank" href={"https://drive.google.com/file/d/1h4b2Bo8ifKwloxkBReZA9JXHKtqptVDR/view?usp=drive_link"} className="flex justify-center items-center">
             <FaDownload size={24} className="mr-2" />
             CV
           </a>

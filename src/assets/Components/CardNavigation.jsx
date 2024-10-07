@@ -17,7 +17,7 @@ export function CardNavigation() {
 
       <div className="mb-5 fixed top-0 left-0 m-5 backdrop-blur-sm text-white p-2 text-center shadow-lg border-2 rounded-md custom-card-hover text-white hover:text-custom-button-text hover:bg-custom-button z-10">
         <div className="flex justify-center items-center">
-          <a target="_blank" href={"https://drive.google.com/file/d/1h4b2Bo8ifKwloxkBReZA9JXHKtqptVDR/view?usp=drive_link"} className="flex justify-center items-center">
+          <a target="_blank" href={"/"} className="flex justify-center items-center">
             <FaDownload size={24} className="mr-2" />
             CV
           </a>
@@ -39,17 +39,17 @@ export function CardNavigation() {
               <SiAboutdotme size={24} />
             </div>
           </Link>
-          <Link to="/graduation">
+          <Link to="/">
             <div className="hover:bg-black p-2 rounded-md transition duration-100 ease-out md:ease-in mr-3 hover:bg-custom-button text-white hover:text-custom-button-text" title="My Education">
               <FaGraduationCap size={24} />
             </div>
           </Link>
-          <Link to="/portofolio">
+          <Link to="/">
             <div className="hover:bg-black p-2 rounded-md transition duration-100 ease-out md:ease-in mr-3 hover:bg-custom-button text-white hover:text-custom-button-text" title="My Portofolio">
               <PiProjectorScreenChartFill size={24} />
             </div>
           </Link>
-          <Link to="/achievement">
+          <Link to="/">
             <div className="hover:bg-black p-2 rounded-md transition duration-100 ease-out md:ease-in mr-3 hover:bg-custom-button text-white hover:text-custom-button-text" title="My Achievements">
               <PiCertificateFill size={24} />
             </div>

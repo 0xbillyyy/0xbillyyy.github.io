@@ -39,22 +39,22 @@ export function CardNavigation() {
               <SiAboutdotme size={24} />
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/graduation">
             <div className="hover:bg-black p-2 rounded-md transition duration-100 ease-out md:ease-in mr-3 hover:bg-custom-button text-white hover:text-custom-button-text" title="My Education">
               <FaGraduationCap size={24} />
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/portofolio">
             <div className="hover:bg-black p-2 rounded-md transition duration-100 ease-out md:ease-in mr-3 hover:bg-custom-button text-white hover:text-custom-button-text" title="My Portofolio">
               <PiProjectorScreenChartFill size={24} />
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/achievement">
             <div className="hover:bg-black p-2 rounded-md transition duration-100 ease-out md:ease-in mr-3 hover:bg-custom-button text-white hover:text-custom-button-text" title="My Achievements">
               <PiCertificateFill size={24} />
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/contact">
             <div className="hover:bg-black p-2 rounded-md transition duration-100 ease-out md:ease-in mr-3 hover:bg-custom-button text-white hover:text-custom-button-text" title="Contact Me">
               <MdContacts size={24} className="" />
             </div>
